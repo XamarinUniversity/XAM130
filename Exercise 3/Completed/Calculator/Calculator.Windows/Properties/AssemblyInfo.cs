@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Calculator.Windows")]
-[assembly: AssemblyCopyright("Copyright ©  2017 Xamarin")]
+[assembly: AssemblyCopyright("Copyright (c) 2018 Xamarin Inc., Microsoft.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

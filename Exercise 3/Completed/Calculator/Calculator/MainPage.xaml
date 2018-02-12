@@ -6,7 +6,7 @@
     
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
-            <OnPlatform.iOS>0,20,0,0</OnPlatform.iOS>
+            <On Platform="iOS">0,20,0,0</On>
         </OnPlatform>
     </ContentPage.Padding>
 

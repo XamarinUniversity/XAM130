@@ -11,7 +11,7 @@ namespace Calculator
         string mathOperator;
         double firstNumber, secondNumber;
 
-        public CalculatorPage()
+        public MainPage()
         {
             InitializeComponent();
             OnClear(this, null);

@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+
 using Xamarin.Forms;
 
 namespace Calculator
@@ -10,9 +11,9 @@ namespace Calculator
         string mathOperator;
         double firstNumber, secondNumber;
 
-        public MainPage ()
+        public CalculatorPage()
         {
-            InitializeComponent ();
+            InitializeComponent();
             OnClear(this, null);
         }
 
@@ -25,7 +26,9 @@ namespace Calculator
             {
                 this.resultText.Text = "";
                 if (currentState < 0)
+                {
                     currentState *= -1;
+                }
             }
 
             this.resultText.Text += pressed;
@@ -33,7 +36,7 @@ namespace Calculator
             double number;
             if (double.TryParse(this.resultText.Text, out number))
             {
-                this.resultText.Text = number.ToString("N0");
+                this.resultText.Text = number.ToString();
                 if (currentState == 1)
                 {
                     firstNumber = number;
@@ -66,8 +69,7 @@ namespace Calculator
             if (currentState == 2)
             {
                 var result = SimpleCalculator.Calculate(firstNumber, secondNumber, mathOperator);
-
-                this.resultText.Text = result.ToString("N0");
+                this.resultText.Text = result.ToString();
                 firstNumber = result;
                 currentState = -1;
             }

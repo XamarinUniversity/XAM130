@@ -129,7 +129,8 @@ namespace Calculator
             Button button = (Button)sender;
             string pressed = button.Text;
 
-            if (this.resultText.Text == "0" || currentState < 0) {
+            if (this.resultText.Text == "0" || currentState < 0)
+            {
                 this.resultText.Text = "";
                 if (currentState < 0)
                     currentState *= -1;
@@ -138,7 +139,8 @@ namespace Calculator
             this.resultText.Text += pressed;
 
             double number;
-            if (double.TryParse(this.resultText.Text, out number)) {
+            if (double.TryParse(this.resultText.Text, out number))
+            {
                 this.resultText.Text = number.ToString("N0");
                 if (currentState == 1) {
                     firstNumber = number;

@@ -141,7 +141,7 @@ namespace Calculator
             double number;
             if (double.TryParse(this.resultText.Text, out number))
             {
-                this.resultText.Text = number.ToString("N0");
+                this.resultText.Text = number.ToString();
                 if (currentState == 1) {
                     firstNumber = number;
                 } else {
@@ -172,7 +172,7 @@ namespace Calculator
             {
                 var result = SimpleCalculator.Calculate(firstNumber, secondNumber, mathOperator);
 
-                this.resultText.Text = result.ToString("N0");
+                this.resultText.Text = result.ToString();
                 firstNumber = result;
                 currentState = -1;
             }

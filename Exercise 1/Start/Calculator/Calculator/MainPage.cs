@@ -70,7 +70,7 @@ namespace Calculator
                 BackgroundColor = Color.FromRgb(0x80, 0x80, 0x80),
                 TextColor = Color.White,
                 Font = Font.SystemFontOfSize(36),
-                BorderRadius = 0,
+                CornerRadius = 0,
             };
             Grid.SetRow(clear, 5);
             clear.Clicked += OnClear;
@@ -82,7 +82,7 @@ namespace Calculator
                 BackgroundColor = Color.FromHex("#FFA500"),
                 TextColor = Color.White,
                 Font = Font.SystemFontOfSize(36),
-                BorderRadius = 0,
+                CornerRadius = 0,
             };
             Grid.SetRow(equals, 5);
             Grid.SetColumn(equals, 1);
@@ -101,7 +101,7 @@ namespace Calculator
                 BackgroundColor = Color.FromHex("#FFA500"),
                 TextColor = Color.White,
                 Font = Font.SystemFontOfSize(36),
-                BorderRadius = 0,
+                CornerRadius = 0,
             };
             Grid.SetRow(button, row);
             Grid.SetColumn(button, 3);
@@ -116,7 +116,7 @@ namespace Calculator
                 BackgroundColor = Color.White,
                 TextColor = Color.Black,
                 Font = Font.SystemFontOfSize(36),
-                BorderRadius = 0,
+                CornerRadius = 0,
             };
             Grid.SetRow(button, row);
             Grid.SetColumn(button, col);
